@@ -1,0 +1,56 @@
+/* Pretty printing styles. Used with prettify.js. */
+/* Based on Vim sunburst theme by David Leibovic 
+as well as the example theme on lesscss.org*/
+
+pre .str, code .str { color: #B35E4D; } /* string  - Red */
+pre .kwd, code .kwd { color: #D9BF8C; } /* keyword - yellow */
+pre .com, code .com { color: #AEAEAE; font-style: italic; } /* comment - gray */
+pre .typ, code .typ { color: ##738C73; } /* type - green */
+pre .lit, code .lit { color: #669199; } /* literal - blue */
+pre .pun, code .pun { color: #fff; } /* punctuation - white */
+pre .pln, code .pln { color: #fff; } /* plaintext - white */
+pre .tag, code .tag { color: #D9BF8C; } /* html/xml tag    - yellow */
+pre .atn, code .atn { color: #738C73; } /* html/xml attribute name  - green */
+pre .atv, code .atv { color: #B35E4D; } /* html/xml attribute value - red */
+pre .dec, code .dec { color: #669199; } /* decimal - blue */
+
+pre.prettyprint, code.prettyprint {
+  background-color: #262626;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+}
+
+pre.prettyprint {
+  width: 95%;
+  margin: 1em auto;
+  padding: 1em;
+  white-space: pre-wrap;
+}
+
+
+@media print {
+  pre .str, code .str { color: #060; }
+  pre .kwd, code .kwd { color: #006; font-weight: bold; }
+  pre .com, code .com { color: #600; font-style: italic; }
+  pre .typ, code .typ { color: #404; font-weight: bold; }
+  pre .lit, code .lit { color: #044; }
+  pre .pun, code .pun { color: #440; }
+  pre .pln, code .pln { color: #000; }
+  pre .tag, code .tag { color: #006; font-weight: bold; }
+  pre .atn, code .atn { color: #404; }
+  pre .atv, code .atv { color: #060; }
+}
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  margin: 0 0 0 33px; /* IE indents via margin-left */
+}
+ol.linenums li {
+  padding-left: 12px;
+  color: #bebec5;
+  line-height: 20px;
+  text-shadow: 0 -1px 1px #262626;
+}
