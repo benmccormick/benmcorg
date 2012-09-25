@@ -195,6 +195,18 @@ pre .prettyprint
 
 }
 
+
+.sidebar
+{
+	 opacity: 0.3; 
+}
+
+.donation form h5
+{
+	display:inline;
+
+}
+
 @media (min-width: 768px) and (max-width: 979px)  {
 
 	.headerlinkbox
@@ -245,7 +257,6 @@ pre .prettyprint
 	{
 		margin: 0 !important; 
 	}
-
 
 
 }

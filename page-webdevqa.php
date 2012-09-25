@@ -1,11 +1,5 @@
-
-
 <?php
-
 /*
-
-Template Name: Web Dev Q&A
-
    Copyright 2012 by Ben McCormick
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +17,6 @@ Template Name: Web Dev Q&A
 */
 
 ?>
-
 <?php get_header(); ?>
 
 		<div class="row">
@@ -113,25 +106,24 @@ Template Name: Web Dev Q&A
 			</div>
 
 			<div class="span3 sidebar">
+				<div class="donation">
 
-				<h5>Satisfied? Donate here:</h5>
+					
 
-				
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 
-				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+					<input type="hidden" name="cmd" value="_s-xclick">
 
-				<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
 
-				<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+					">
+					<h5>Satisfied?</h5>
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 
-				">
+					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 
-				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-
-				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-
-				</form>
-
+					</form>
+				</div>
 
 
 			</div>
@@ -143,19 +135,6 @@ Template Name: Web Dev Q&A
 		<?php get_footer(); ?>	
 
 	</div><!--/.fixed-container-->
-
-			
-
-		    <!-- Le javascript
-
-		    ================================================== -->
-
-		    <!-- Placed at the end of the document so the pages load faster -->
-
-		    <script src="bootstrap/js/jquery-1.8.0.min.js"></script>
-
-		    <script src="bootstrap/js/bootstrap.js"></script>
-
 
 
 		  </body>

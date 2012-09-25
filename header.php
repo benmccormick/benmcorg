@@ -1,3 +1,4 @@
+<!doctype html>  
 <!--
    Copyright 2012 by Ben McCormick
 
@@ -14,9 +15,6 @@
    limitations under the License.
 
 -->
-
-<!doctype html>  
-
 <!--[if IEMobile 7 ]> <html <?php language_attributes(); ?>class="no-js iem7"> <![endif]-->
 <!--[if lt IE 7 ]> <html <?php language_attributes(); ?> class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html <?php language_attributes(); ?> class="no-js ie7"> <![endif]-->
@@ -53,8 +51,7 @@
 		<?php wp_head(); ?>
 		
 
-		
-  		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/prettify/prettify.js"></script>
+
 	</head>
 	
 	<body onload="prettyPrint()" <?php body_class(); ?>>
@@ -90,7 +87,7 @@
 								<a href="mailto:ben.mccormick@alumni.duke.edu">
 									<i class="icon-envelope"> </i> 
 								</a>
-								<a href="http://feeds.feedburner.com/Benmccormickorg">
+								<a href="http://www.benmccormick.org/?feed=rss">
 									<i class="icon-rss"> </i>
 								</a>
 							</h2>
