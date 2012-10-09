@@ -1,3 +1,0 @@
-[15-Sep-2012 12:31:52] PHP Fatal error:  Call to undefined function  get_header() in /home2/benmccor/public_html/wp-content/themes/wordpress-bootstrap/index.php on line 1
-[15-Sep-2012 12:32:06] PHP Fatal error:  Call to undefined function  get_header() in /home2/benmccor/public_html/wp-content/themes/wordpress-bootstrap/index.php on line 1
-[15-Sep-2012 12:32:25] PHP Fatal error:  Call to undefined function  get_header() in /home2/benmccor/public_html/wp-content/themes/wordpress-bootstrap/index.php on line 1

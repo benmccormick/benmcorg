@@ -1,0 +1,52 @@
+{% extends "posts/template.html" %}
+	{% block content %}			
+		{% if page %}
+				{% for post in page %}					
+				<article id="{{post.slug}}" class="post" role="article">
+					<div class="row">
+						<div class="span2 articledate">
+							<time datetime="{{ post.pub_date|date:"Y-m-d" }}">{{post.pub_date|date:"DATE_FORMAT"}}</time>
+							<a href="/post/{{post.slug}}/"><i class="icon-link"></i></a>
+						</div>
+						<header class="post_header span6 ">
+							<h1 class="headline">{{ post.title }}</h1>
+						
+						</header> <!-- end article header -->
+					</div>
+					<div class="row">
+					<section class="span6 offset2 post_content clearfix">
+
+    					{{post.content|safe}}
+					</section>
+					</div>
+				</article> <!-- end article -->
+				{% endfor %}
+				<div class="row">
+					<div class="pagination span6 offset2">
+						<ul class="clearfix">
+			    	{% if page.has_previous %}
+			    		<li>
+			    			<a href="/{{page.previous_page_number}}/">Previous</a>
+			    	{% else %}
+			    		<li class="disabled">
+			    			<a href="#">Previous</a>
+			    	{% endif %}
+			    		</li>
+			    	{% if page.has_next %}
+			    		<li>
+			    			<a href="/{{page.next_page_number}}/">Next</a>
+			    	{% else %}
+			    		<li class="disabled">
+			    			<a href="#">Next</a>
+			    	{% endif %}
+			    		</li>
+			    		</ul>
+			    	</div>
+		    	</div>
+
+		{% else %}
+		    <p>No posts are available.</p>
+		{% endif %}
+	{% endblock %}							
+    
+    			

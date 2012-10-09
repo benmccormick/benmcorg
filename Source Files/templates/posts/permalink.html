@@ -1,0 +1,27 @@
+{% extends "posts/template.html" %}
+	{% block content %}			
+		{% if post %}					
+				<article id="{{post.slug}}" class="post" role="article">
+					<div class="row">
+						<div class="span2 articledate">
+							<time datetime="{{ post.pub_date|date:"Y-m-d" }}">{{post.pub_date|date:"DATE_FORMAT"}}</time>
+						</div>
+						<header class="post_header span6 ">
+							<h1 class="headline">{{ post.title }}</h1>
+						
+						</header> <!-- end article header -->
+					</div>
+					<div class="row">
+						<section class="span6 offset2 post_content clearfix">
+
+	    					{{post.content|safe}}
+						</section>
+					</div>
+				</article> <!-- end article -->
+		    
+		{% else %}
+		    <p>This post doesn't exist. sorry</p>
+		{% endif %}
+	{% endblock %}							
+    
+    			
